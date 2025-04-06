@@ -648,3 +648,26 @@ body {
    color:#FFFFFF;
    transition:all ease 0.5s;
   }
+
+  @media(max-width:750px){
+    header {
+        position: fixed;
+        top: 10px; /* Hide above the screen */
+        left: 0;
+        width: 100%;
+        transition: top 0.5s ease;
+        z-index: 999;
+      }
+
+    .social-icons a{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e6e3e3;
+        margin: 40px 10px -80px;
+        border-radius: 50%;
+        text-decoration: none;
+      }
+  }
