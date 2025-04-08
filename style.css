@@ -21,6 +21,13 @@ header {
     top: 0; /* Slide down */
   }
   
+  .logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 
 /* Base navbar layout */
 .navbar {
@@ -623,7 +630,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #e6e3e3;
-    margin: 60px 35px 0px;
+    margin: 60px 35px -5 0px;
     border-radius: 50%;
     text-decoration: none;
   }
@@ -652,7 +659,7 @@ body {
   @media(max-width:750px){
     header {
         position: fixed;
-        top: 10px; /* Hide above the screen */
+        top: 10px; 
         left: 0;
         width: 100%;
         transition: top 0.5s ease;

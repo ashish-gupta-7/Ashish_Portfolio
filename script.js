@@ -16,6 +16,20 @@ function typeEffect(selector, text, speed = 100) {
     type();
 }
 
+
+//Logo 
+
+const logo = document.querySelector('.logo img');
+
+logo.addEventListener('mouseover', () => {
+  logo.style.transform = 'rotate(-15deg) scale(1.1)';
+});
+
+logo.addEventListener('mouseout', () => {
+  logo.style.transform = 'rotate(0deg) scale(1)';
+});
+
+
 // DOM Ready
 document.addEventListener("DOMContentLoaded", () => {
     typeEffect(".hero h1 span", "Ashish Gupta");
