@@ -10,8 +10,8 @@ body {
 
 header {
     position: fixed;
-    top: -100px; /* Hide above the screen */
-    left: 0;
+    top: 0px; /*Hide above the screen*/
+    left: 20px;
     width: 100%;
     transition: top 0.5s ease;
     z-index: 999;
@@ -22,8 +22,8 @@ header {
   }
   
   .logo img {
-    width: 50px;
-    height: 50px;
+    width: 6rem;
+    height: 6rem;
     transition: transform 0.3s ease;
     border-radius: 8px;
     cursor: pointer;
@@ -32,18 +32,18 @@ header {
 /* Base navbar layout */
 .navbar {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     background-color: #121212;
-    padding: 15px 20px;
+    padding: 15px 50px 20px;
     position: relative;
     z-index: 2;
   }
   
-  .logo {
+  /* .logo {
     color: #fff;
     font-size: 1.5rem;
-  }
+  } */
   
   .menu-toggle {
     font-size: 2rem;
