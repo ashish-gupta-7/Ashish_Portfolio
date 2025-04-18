@@ -121,3 +121,27 @@ document.addEventListener("mousemove", function (e) {
     }
   });
   
+
+// Contact form
+
+document.getElementById("contactForm").addEventListener("submit", function (e){
+  e.preventDefault(); // Prevent actual form submission
+  const form = e.target;
+
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+      if (response.ok) {
+        document.getElementById("confirmationMessage").style.display = "block";
+        form.reset();
+      } else {
+        alert("There was a problem submitting the form.");
+      }
+    }).catch(error => {
+      alert("Oops! Something went wrong.");
+    });
+});
