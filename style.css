@@ -9,7 +9,7 @@ body {
 /* header */
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0px; /*Hide above the screen*/
     left: 20px;
     width: 100%;
