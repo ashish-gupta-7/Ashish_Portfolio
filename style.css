@@ -40,14 +40,56 @@ header {
     z-index: 2;
   }
   
-  .menu-toggle {
+/*   .menu-toggle {
     font-size: 2rem;
     color: #fff;
     background: none;
     border: none;
     cursor: pointer;
     z-index: 1100;
-  }
+  } */
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+.light-mode .footer {
+    background-color: #e9ecef;
+    color: black;
+}
+
+.light-mode .pre-tag {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
   
   /* Add to your style.css or replace matching sections */
   
